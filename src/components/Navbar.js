@@ -14,9 +14,8 @@ export default function ButtonAppBar() {
         <Typography variant="h6" className={classes.title}>
           Anna Chong
         </Typography>
-        <Button color="inherit">About</Button>
-        <Button color="inherit">Portfolio</Button>
-        <Button color="inherit">Contact</Button>
+        <Button href="/" color="inherit">About</Button>
+        <Button href="/portfolio" color="inherit">Portfolio</Button>
       </Toolbar>
     </AppBar>
   );
