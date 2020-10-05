@@ -36,7 +36,7 @@ export const About = () => {
               <Typography variant="h6" gutterBottom>
                 <b>Skills</b>
               </Typography>
-              <Typography component={'span'} variant="body1" gutterBottom>
+              <Typography component={'span'} variant="body2" gutterBottom>
                 Anna has experience with:
               <ul>
                   <li>HTML</li>
