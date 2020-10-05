@@ -1,10 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
-import Navbar from './components/Navbar';
-import { Footer } from './components';
+import { Navbar, Footer } from './components';
 import { About } from "./pages/About/About";
-import { Portfolio } from "./pages/Portfolio";
+import { Portfolio } from "./pages/Portfolio/Portfolio";
 
 function App() {
   return (
