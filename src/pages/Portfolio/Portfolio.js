@@ -9,11 +9,14 @@ import {
   Grid
 } from '@material-ui/core';
 
-// Custom
+// Custom Components
 import { ProjectCard } from '../../components';
 import { ProjectData } from '../../components/Projects';
+
+// Styles
 import { styles } from './Portfolio.styles';
 
+// Component
 export const Portfolio = () => {
   const classes = styles();
 
@@ -27,7 +30,7 @@ export const Portfolio = () => {
               return (
                 <Grid item xs={12} sm={6} key={index + item}>
                   <ProjectCard
-                    image={item.image}
+                    image={process.env.PUBLIC_URL + "/" + item.image}
                     title={item.title}
                     description={item.description}
                     url={item.url}

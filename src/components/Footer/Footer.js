@@ -37,10 +37,10 @@ export const Footer = () => {
           </Grid>
           <Grid item xs={12} align="center">
             <Typography variant="body1" gutterBottom>
-              <a href="https://github.com/acho9138" target="_blank" rel="noopener" className={classes.icons}><i className="fab icons fa-github fa-3x"></i></a>
-              <a href="https://www.linkedin.com/in/anna-chong-199167191/" target="_blank" rel="noopener" className={classes.icons}><i
+              <a href="https://github.com/acho9138" target="_blank" rel="noopener noreferrer" className={classes.icons}><i className="fab icons fa-github fa-3x"></i></a>
+              <a href="https://www.linkedin.com/in/anna-chong-199167191/" target="_blank" rel="noopener noreferrer" className={classes.icons}><i
                 className="fab icons fa-linkedin fa-3x"></i></a>
-              <a href="./assets/resume.pdf" target="_blank" className={classes.icons}><i className="fas icons fa-portrait fa-3x"></i></a>
+              <a href={process.env.PUBLIC_URL + "/assets/resume.pdf"} target="_blank" rel="noopener noreferrer" className={classes.icons}><i className="fas icons fa-portrait fa-3x"></i></a>
             </Typography>
           </Grid>
         </Grid>

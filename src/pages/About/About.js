@@ -21,7 +21,7 @@ export const About = () => {
           alignItems="center"
         >
           <Grid item xs={7} md={5}>
-            <img className={classes.img} alt="Profile" src="assets/profile.jpeg" />
+            <img className={classes.img} alt="Profile" src={process.env.PUBLIC_URL + "/assets/profile.jpeg"} />
           </Grid>
           <Grid item xs={8} md={7}>
             <Paper elevation={3} className={classes.textContainer}>
