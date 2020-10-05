@@ -1,4 +1,7 @@
+// React Libraries
 import React from 'react';
+
+// Material UI
 import { makeStyles } from '@material-ui/core/styles';
 import {
   Card,
@@ -10,6 +13,7 @@ import {
   Typography
 } from '@material-ui/core';
 
+// Custom Styles
 const useStyles = makeStyles({
   grid: {
     flexGrow: 1,
@@ -21,7 +25,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function MediaCard(props) {
+export const ProjectCard = (props) => {
   const classes = useStyles();
 
   return (
