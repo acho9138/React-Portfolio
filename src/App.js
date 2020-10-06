@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Redirect, Switch } from "react-router-dom";
 import './App.css';
 import { Navbar, Footer } from './components';
 import { About } from "./pages/About/About";
@@ -9,15 +9,12 @@ import { NotFound } from "./pages/NotFound/NotFound";
 function App() {
   return (
     <>
-      <Navbar />
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router basename="/">
+        <Navbar />
         <Switch>
-          <Route exact path="/">
-            <Redirect to="/about" />
-          </Route>
-          <Route exact path="/about" component={About} />
-          <Route exact path="/portfolio" component={Portfolio} />
-          <Route path="*" exact={true} component={NotFound} />
+          <Route exact path={["/", "/about"]}><About /></Route>
+          <Route path="/portfolio"><Portfolio /></Route>
+          <Route path="*" exact={true}><NotFound /></Route>
         </Switch>
       </Router>
       <Footer />

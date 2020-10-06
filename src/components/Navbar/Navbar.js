@@ -1,5 +1,6 @@
 // React Libraries
 import React from 'react';
+import { Link } from "react-router-dom";
 
 // Material UI
 import { AppBar, Toolbar, Typography, Button } from '@material-ui/core'
@@ -17,8 +18,8 @@ export const NavBar = () => {
         <Typography variant="h6" className={classes.title}>
           Anna Chong
         </Typography>
-        <Button href="/" color="inherit">About</Button>
-        <Button href="/portfolio" color="inherit">Portfolio</Button>
+        <Button color="inherit"><Link to="/">About</Link></Button>
+        <Button color="inherit"><Link to="portfolio">Portfolio</Link></Button>
       </Toolbar>
     </AppBar>
   );
