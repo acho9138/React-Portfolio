@@ -12,7 +12,9 @@ function App() {
       <Navbar />
       <Router basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route exact path="/" component={About} />
+          <Route exact path="/">
+            <Redirect to="/about" />
+          </Route>
           <Route exact path="/about" component={About} />
           <Route exact path="/portfolio" component={Portfolio} />
           <Route path="*" exact={true} component={NotFound} />
@@ -24,6 +26,3 @@ function App() {
 }
 
 export default App;
-
-/* <Redirect to="/about" />
-          </Route> */
