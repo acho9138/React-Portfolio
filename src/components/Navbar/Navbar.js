@@ -18,8 +18,8 @@ export const NavBar = () => {
         <Typography variant="h6" className={classes.title}>
           Anna Chong
         </Typography>
-        <Button color="inherit"><Link to="/">About</Link></Button>
-        <Button color="inherit"><Link to="portfolio">Portfolio</Link></Button>
+        <Button color="inherit"><Link className={classes.linkButton} to="/">About</Link></Button>
+        <Button color="inherit"><Link className={classes.linkButton} to="portfolio">Portfolio</Link></Button>
       </Toolbar>
     </AppBar>
   );

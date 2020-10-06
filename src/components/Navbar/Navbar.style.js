@@ -11,4 +11,8 @@ export const styles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
+  linkButton: {
+    color: "#FFFFFF",
+    textDecoration: "none"
+  }
 }));
